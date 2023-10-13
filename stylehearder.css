@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  herader,nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  herader,nav li{
+    pading: 20px;
+  }
+
+  herader,.enlaces {
+    float: left;
+    margin-left:80px;
+  }
+
+  herader,.iconos{
+    float: right;
+    margin-right:80px;
+  }
+  
+  herader,nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  herader,nav li a:hover {
+    color: #5b5c52;
+  }
+  herader,#active {
+    background-color: #04AA6D;
+  }
