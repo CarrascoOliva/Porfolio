@@ -73,17 +73,20 @@ body{
         .descarga{
           background-color: #fee6e3;
         }
-    .proyectos{
-      width:80%;
-      margin:0 auto;
-      text-align:center;
-      items-align:center;
-      padding:10px;
-  }
+        .proyectos{
+          display: flex; /* Añade esta línea */
+          justify-content: center; /* Añade esta línea */
+          flex-wrap: wrap; /* Añade esta línea */
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          align-items: center; /* Cambia 'items-align' a 'align-items' */
+          padding: 10px;
+      }
   .proyecto{
     margin:20px;
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
     float:left;
     border:1px solid  black;
     border-radius:15px;
