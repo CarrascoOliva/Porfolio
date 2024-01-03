@@ -1,47 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #1a73e8;
+    --color-secondary: #a2c2ac;
+    --color-tertiary: #f8f9fa;
+    --color-dark: #202124;
+    --color-light: #ffffff;
+}
+
 body {
-    background-color: rgb(241, 239, 235);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-dark);
+    background-color: var(--color-tertiary);
     
 }
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color-light);
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+
 .container {
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .navbar {
     width: 100%;
-    text-align: center;
+    height: 60px; 
+    background-color: var(--color-secondary); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0  0 10px 10px;
+}
+
+
+.nav-link {
+    color: var(--color-dark); 
+    font-weight: 700; 
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     justify-items: center;
     align-items: start;
-    margin-top: 5rem;
+    margin: 4rem 2rem;
 }
 
 .card {
-    margin: 1rem;
-    width: 18rem;
-    
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-img-top {
     width: 100%;
-    height: 12rem;
-    
+    height: 70%;
+    object-fit: cover;
 }
 
 .card-body {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-a{
-    text-decoration: none;
-    color: black;
+
+.card-body a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
